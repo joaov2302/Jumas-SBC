@@ -10,7 +10,7 @@ function apareca(){
  
  function cadastroOnclick(event) {
     event.preventDefault();
-    window.location.href = "Login/cadastro2.html";
+    window.location.href = "cadastro2.html";
   }
 
    function agendaOnclick(event) {
