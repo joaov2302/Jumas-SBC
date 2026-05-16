@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preços - Tripz</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/png" href="img/tripzlogoguia.png" sizes="32x32" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/tripzlogoguia.png" alt="Logo Tripz" style="height: 100px; margin-left: 15px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="info.html">Sobre Nós</a></li>
+                              <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Serviços
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="precos.html">Pacotes</a></li>
+            <li><a class="dropdown-item" href="personal.html">Personal Tripz</a></li>
+            
+            
+          </ul>
+        </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="precos.html">Serviços</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Nosso contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ajuda_suporte.html">Ajuda e Suporte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4" data-aos="fade-up">
+      <div id="carouseltabela" class="carousel slide mx-auto mt-5" style="max-width: 800px;" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouseltabela" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouseltabela" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouseltabela" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/basico.webp" class="d-block w-100" alt="Imagem 1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pacote Básico</h5>
+              <p>Uma viagem <strong>completa</strong> pensada para você, incluindo voo, hospedagem e até outros produtos.</p>
+              <br />
+              <p><strong>Economize até 30%!</strong></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Premium.webp" class="d-block w-100" alt="Imagem 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pacote Premium</h5>
+              <p>Pacote com 2 destinos incríveis em uma só viagem e ainda com traslado incluído.</p><br />
+              <p><strong>Conheça mais destinos pagando menos!</strong></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Luxo.webp" class="d-block w-100" alt="Imagem 3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pacote de Luxo</h5>
+              <p>
+                Roteiros terrestres para você visitar diversos países em uma só viagem. Deixe o planejamento conosco e
+                mergulhe em uma experiência internacional sem complicações, com nossos roteiros guiados!
+              </p><br />
+              <p><strong>Circuitos, Roteiros e <b>muitos</b> destinos</strong></p>
+            </div>
+            
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouseltabela" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouseltabela" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+        <br /><br /><br />
+      </div>
+
+
+      
+
+      <h1>Serviços e Preços</h1>
+      <p>Aqui estão os serviços que oferecemos e seus respectivos preços:</p>
+      <div class="tabela-container">
+        <table class="tabela-servicos">
+          <thead>
+            <tr>
+              <th>Serviço</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pacote Básico</td>
+              <td>R$ 1499,99</td>
+            </tr>
+            <tr>
+              <td>Pacote Premium</td>
+              <td>R$ 3499,99</td>
+            </tr>
+            <tr>
+              <td>Pacote Luxo</td>
+              <td>R$ 5999,99</td>
+            </tr>
+            <tr>
+              <td> <a href="personal.html">Pacote Personal Tripz</a></td>
+              <td>R$ 2799,99 </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <br /><br /><br />
+    <footer class="custom-footer" data-aos="fade-up">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <br /><br />
+          <h4>Tripz</h4>
+          <p>Conectando você ao seu Destino.</p>
+        </div>
+
+        <div class="footer-links align-items-center">
+          <div></div>
+        </div>
+        <div class="footer-links">
+          <a href="#"><strong>Início</strong></a>
+          <div class="footer-social">
+            <p>Siga-nos:</p>
+            <a href="https://www.instagram.com/tripz_seudestino/" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24" />
+            </a>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Tripz. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 600,
+    once: true
+  });
+</script>
+</body>
+</html>

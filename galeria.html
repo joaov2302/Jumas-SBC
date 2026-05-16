@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="icon" type="image/png" href="img/tripzlogoguia.png" sizes="32x32" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/tripzlogoguia.png" alt="Logo Tripz" style="height: 100px; margin-left: 15px;" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="info.html">Sobre Nós</a></li>
+                      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Serviços
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="precos.html">Pacotes</a></li>
+            <li><a class="dropdown-item" href="personal.html">Personal Tripz</a></li>
+            
+            
+          </ul>
+        </li>
+            <!-- <li class="nav-item"><a class="nav-link" href="precos.html">Serviços</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Nosso contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="ajuda_suporte.html">Ajuda e Suporte</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastre-se</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <h1 class="text-center">Galeria</h1>
+      <h5 class="text-center">Explore nossa coleção de belas memórias de viagens e eventos passados.</h5>
+      <div class="row mt-4 g-4 card-grid">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card">
+            <img src="https://tourfacil.s3.amazonaws.com/tour-facil/servicos/tour-vale-europeu-blumenau-e-pomerode-664adedc6d889-large.jpg?quality=75" alt="Pomerode" class="card-img-top" />
+          <div class="card-body">
+              <h5 class="card-title">Pomerode</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Pomerode">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 1649,99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/05/39/60/71/360_F_539607107_KdB7wnFBtJbYxnvlU6FyZMVEXISehknJ.jpg" class="card-img-top" alt="Lençóis Maranhenses" />
+            <div class="card-body">
+              <h5 class="card-title">Parque Lençóis Maranhenses (Lagoa Azul)</h5>
+              <div class="estrelas"><h6>⭐⭐⭐⭐</h6></div>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses">Saiba Mais</a></h6></div>
+              
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 549,99 </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/04/84/51/15/360_F_484511562_S34UIvxkz7XvHxPxvDDeITIBAaHmHYKk.jpg" class="card-img-top" alt="João Pessoa" />
+            <div class="card-body">
+              <h5 class="card-title">João Pessoa</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Jo%C3%A3o_Pessoa">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 1199,99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/04/65/99/85/360_F_465998539_27D5trK7ajlDHQs75KDC8LsCtltA5uoY.jpg" class="card-img-top" alt="Ilha Grande" />
+            <div class="card-body">
+              <h5 class="card-title">Ilha Grande</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Ilha_Grande_(Angra_dos_Reis)">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 599,99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="card">
+            <img src="https://cdn-clubecandeias.s3.sa-east-1.amazonaws.com/uploads/2017/01/chapada-dos-veadeiros-GO-onde-fica-e-o-que-visitar.jpg" class="card-img-top" alt="Chapada dos Veadeiros" />
+            <div class="card-body">
+              <h5 class="card-title">Chapada dos Veadeiros</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Parque_Nacional_da_Chapada_dos_Veadeiros">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 699,99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/1539937044/pt/foto/formiga-waterfall-in-jalapao-in-the-state-of-tocantins-in-brazil.jpg?s=612x612&w=0&k=20&c=Gky88YtsHsgsdPUQmgh2CyInDitjwYI3FV-omum4yYI=" class="card-img-top" alt="Jalapão" />
+            <div class="card-body">
+              <h5 class="card-title">Jalapão</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Parque_Estadual_do_Jalap%C3%A3o">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 799,99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="card">
+            <img src="img/Dublin.webp" class="card-img-top" alt="Jalapão" />
+            <div class="card-body">
+              <h5 class="card-title">Dublin - Irlanda</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea + Cronograma</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Dublin">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 7999,99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="card">
+            <img src="img/paris.webp" class="card-img-top" alt="Jalapão" />
+            <div class="card-body">
+              <h5 class="card-title">Paris - França</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea + Cronograma</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/Paris">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 7999,99</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="card">
+            <img src="img/tokyo.webp" class="card-img-top" alt="Jalapão" />
+            <div class="card-body">
+              <h5 class="card-title">Tóquio - Japão</h5>
+              <DIV class="estrelas"><h6>⭐⭐⭐⭐⭐</h6></DIV>
+              <div class="descricao"><h6>Saindo de São Paulo</h6></div><br>
+              <div class="descricao"><h6>Hotel + Passagem Aérea + Cronograma</h6></div>
+              <div class="descricao"><h6><a href="https://pt.wikipedia.org/wiki/T%C3%B3quio">Saiba Mais</a></h6></div>
+              <hr class="my-4">
+              <h5>Preço por pessoa R$ 7999,99</h5>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <br /><br /><br />
+    <footer class="custom-footer" data-aos="fade-up">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <br /><br />
+          <h4>Tripz</h4>
+          <p>Conectando você ao seu Destino.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#"><strong>Início</strong></a>
+          <div class="footer-social">
+            <p>Siga-nos:</p>
+            <a href="https://www.instagram.com/tripz_seudestino/" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24" />
+            </a>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Tripz. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
+</body>
+</html>
