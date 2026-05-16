@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Destinos - Tripz</title>
+  <link rel="icon" type="image/png" href="img/tripzlogoguia.png" sizes="32x32" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="js/script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="containercad2">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/tripzlogoguia.png" alt="Logo Tripz" style="height: 100px; margin-left: 15px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="info.html">Sobre Nós</a></li>
+                      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Serviços
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="precos.html">Pacotes</a></li>
+            <li><a class="dropdown-item" href="personal.html">Personal Tripz</a></li>
+            
+            
+          </ul>
+        </li>
+            <!-- <li class="nav-item"><a class="nav-link" href="precos.html">Serviços</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Nosso contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="ajuda_suporte.html">Ajuda e Suporte</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4">
+      <section
+        style="background-color: #f4eaff; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto;"
+        data-aos="fade-up"
+      >
+        <h2 data-aos="fade-down" data-aos-delay="100">Cadastro</h2>
+        <br />
+
+        <form method="get" action="." class="cadastrocep" data-aos="fade-up" data-aos-delay="200">
+          <label for="cep" data-aos="fade-right" data-aos-delay="300">CEP:</label>
+          <input
+            type="number"
+            id="cep"
+            value=""
+            placeholder="Insira o CEP"
+            onblur="pesquisacep(this.value);"
+            required
+            data-aos="fade-left"
+            data-aos-delay="300"
+          />
+
+          <button type="button" class="btnLimpar" onclick="" data-aos="zoom-in" data-aos-delay="350">
+            Pesquisar
+          </button>
+          <br /><br />
+
+          <label for="logradouro" data-aos="fade-right" data-aos-delay="400">Rua:</label>
+          <input type="text" id="rua" placeholder="Nome da Rua" data-aos="fade-left" data-aos-delay="400" /><br /><br />
+
+          <label for="numero" data-aos="fade-right" data-aos-delay="450">Número:</label>
+          <input type="number" id="numero" placeholder="Insira o Número" data-aos="fade-left" data-aos-delay="450" /><br /><br />
+
+          <label for="complemento" data-aos="fade-right" data-aos-delay="500">Complemento:</label>
+          <input type="text" id="complemento" placeholder="Insira o Complemento" data-aos="fade-left" data-aos-delay="500" /><br /><br />
+
+          <label for="bairro" data-aos="fade-right" data-aos-delay="550">Bairro:</label>
+          <input type="text" id="bairro" placeholder="Insira o Bairro" data-aos="fade-left" data-aos-delay="550" /><br /><br />
+
+          <label for="cidade" data-aos="fade-right" data-aos-delay="600">Cidade:</label>
+          <input type="text" id="cidade" placeholder="Insira a Cidade" data-aos="fade-left" data-aos-delay="600" /><br /><br />
+
+          <label for="uf" data-aos="fade-right" data-aos-delay="650">UF:</label>
+          <input type="text" id="uf" placeholder="Insira a UF" data-aos="fade-left" data-aos-delay="650" /><br /><br />
+
+          <button type="reset" class="btnLimpar" onclick="limpa_formulário_cep()" data-aos="zoom-in" data-aos-delay="750">
+            Limpar
+          </button>
+          <br /><br />
+        
+       
+      
+     
+          <button
+            type="button"
+            class="btnLimpar"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            onclick="apareca()"
+          >
+            Concluir Cadastro
+          
+          </button>
+        </section>
+          <section>
+        </form>
+
+        <div class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro concluído!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="apareca" class="divblock">
+                  <h2 id="parabens"></h2>
+                  <p id="mensagem"></p>
+                  <p id="mensagem2"></p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="obrigadoclick(event)" >Obrigado!</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+   
+    
+    </main>
+
+    <br /><br /><br />
+    <footer class="custom-footer" data-aos="fade-up">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <br /><br />
+          <h4>Tripz</h4>
+          <p>Conectando você ao seu Destino.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#"><strong>Início</strong></a>
+          <div class="footer-social">
+            <p>Siga-nos:</p>
+            <a href="https://www.instagram.com/tripz_seudestino/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                alt="Instagram"
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+          <div class="footer-bottom" data-aos="fade-up">
+            <p>© 2025 Tripz. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 600,
+      once: true,
+    });
+
+    function apareca() {
+      document.getElementById("parabens").textContent = "Parabéns!!!";
+      document.getElementById("parabens").style.color = "blue";
+      document.getElementById("mensagem").textContent = "Você ganhou uma promoção!";
+      document.getElementById("mensagem2").textContent = "10% de desconto na primeira viagem!";
+    }
+  </script>
+</body> 
+</html>
+
